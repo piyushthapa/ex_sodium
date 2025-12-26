@@ -24,3 +24,5 @@ ex_sodium-*.tar
 
 # Rust binary artifacts
 /target/
+
+*.tar

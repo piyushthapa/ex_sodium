@@ -13,11 +13,6 @@
         inherit (pkgs.lib) optional optionals;
         pkgs = import nixpkgs { inherit system; };
 
-        elixir = pkgs.beam.packages.erlang_27.elixir.override {
-          version = "1.18";
-          rev = "v1.18-latest";
-          sha256 = "sha256-SZaDCkdYTTLU1pqAZhbfQ2qwj9MgIcCJ1hTA0LsJA3A=";
-        };
 
       in with pkgs; {
         modules = [
